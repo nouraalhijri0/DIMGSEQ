@@ -15,9 +15,9 @@ pip install -r requirements.txt
 ```
 
 ## Datasets
-Prepare datasets and put them under the `datasets` folder. Take `datasets/CommonsenseConversation/train.jsonl` as an example. We use four datasets in our paper.
+Prepare datasets and put them under the `datasets` folder.
 
-## DiffuSeq Training
+## DIMGSEQ Training
 ```bash
 cd scripts
 bash train.sh
@@ -30,4 +30,3 @@ The DIMGSEQ has trained on 8 NVIDIA V100 32G GPUs.
 cd scripts
 python eval_seq2seq.py --folder ../output/ArtELingo --mbr
 ```
-Note: if you want to use this evaluation script for output files from other models, please make sure the same line from these output files refers to the same piece of data. Otherwise the diversity score could be incorrect.
