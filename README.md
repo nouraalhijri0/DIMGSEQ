@@ -1,6 +1,6 @@
 
 <p align = "center">
-<img src="img/training" width="95%" alt="" align=center />
+<img src="training.pdf" width="95%" alt="" align=center />
 </p>
 <p align = "center">
 DIMGSEQ: Image to Sequence Emotion Generation with Diffusion Models using ArtELingo.
