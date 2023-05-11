@@ -1,30 +1,9 @@
-# <img src="img/logo.jpg" width="8%" alt="" align=center /> DiffuSeq
-
-Official Codebase for [*__*DiffuSeq*__: Sequence to Sequence Text Generation With Diffusion Models*](https://arxiv.org/abs/2210.08933).
 
 <p align = "center">
-<img src="img/diffuseq-process.png" width="95%" alt="" align=center />
+<img src="img/training" width="95%" alt="" align=center />
 </p>
 <p align = "center">
-The diffusion process of our conditional diffusion language model DiffuSeq.
-</p>
-
-## Highlights
-- Our proposed __*DiffuSeq*__ as a conditional language model is trained end-to-end in a classifier-free manner.
-- We establish a theoretical
-connection among AR, NAR and __*DiffuSeq*__ models (refer to our original paper).
-- __*DiffuSeq*__ is a powerful model for text
-generation, matching or even surpassing competitive AR, iterative NAR,
-and large-PLMs on quality and diversity.
-
-Our study addresses promising achievements by such a new
-sequence-to-sequence learning paradigm.
-
-<p align = "center">
-<img src="img/result-1.png" width="80%" alt="" align=center />
-</p>
-<p align = "center">
-<img src="img/result-2.png" width=80%" alt="" align=center />
+DIMGSEQ: Image to Sequence Emotion Generation with Diffusion Models using ArtELingo.
 </p>
 
 
@@ -37,13 +16,6 @@ pip install -r requirements.txt
 
 ## Datasets
 Prepare datasets and put them under the `datasets` folder. Take `datasets/CommonsenseConversation/train.jsonl` as an example. We use four datasets in our paper.
-
-| Task | Datasets | Training Samples | Source | Used in __*DiffuSeq*__
-|-|-|-|-|-|
-| Open-domain Dialogue | Commonsense Conversation | 3382k | [CCM](https://github.com/thu-coai/ccm) | [download](https://drive.google.com/drive/folders/1exENF9Qc5UtXnHlNl9fvaxP3zyyH32qp?usp=sharing) |
-| Question Generation | Quasar-T | 117k | [OpenQA](https://github.com/thunlp/OpenQA) | [download](https://drive.google.com/drive/folders/122YK0IElSnGZbPMigXrduTVL1geB4wEW?usp=sharing) |
-| Text Simplification | Wiki-alignment | 677k | [Wiki-auto](https://github.com/chaojiang06/wiki-auto) | [download](https://drive.google.com/drive/folders/1BlWtD1UbnL_ef06Riq-gABlL0Zb50s-d?usp=sharing)|
-| Paraphrase | QQP | 144k|  [Kaggle](https://www.kaggle.com/c/quora-question-pairs) | [download](https://drive.google.com/drive/folders/1BHGCeHRZU7MQF3rsqXBIOCU2WIC3W6fb?usp=sharing) |
 
 ## DiffuSeq Training
 ```bash
