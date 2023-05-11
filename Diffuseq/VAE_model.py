@@ -26,8 +26,5 @@ class VAE(nn.Module):
         return latent_rep, recons_txt
 
 def vae_loss(txt, recons_txt, Encoder):
-    txt = Encoder(txt)
-    recons_txt = Encoder(recons_txt)
     loss = F.mse_loss(recons_txt, txt, reduction='mean')
-    
     return loss
